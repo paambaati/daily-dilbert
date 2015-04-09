@@ -90,7 +90,7 @@ try:
 	msgAlternative.attach(msgText)
 
 	# We reference the image in the IMG SRC attribute by the ID we give it below
-	msgText = MIMEText('<img src="cid:dilbert"><br><br><em><small>This email is sent automatically by v2 (updated 22nd January, 2015) of a badass script running on Python and magic! If you\'d like to unsubscribe, please <a href="mailto:exchequer598@gmail.com?subject=Unsubscribe - Daily Dilbert">write</a> to me!<small></em><br><br><small>The <a href="http://www.dilbert.com/">Dilbert</a> comic strip by <a href="http://www.dilbert.com/about/">Scott Adams</a> is copyrighted & trademarked material.</small>', 'html')
+	msgText = MIMEText(extra_text + '<img src="cid:dilbert"><br><br><em><small>This email is sent automatically by v3 (updated 9th April, 2015) of a badass script running on Python and magic! Also, it is finally <a href="https://github.com/paambaati/daily-dilbert" target="_blank">open-source</a>! If you\'d like to unsubscribe, please <a href="mailto:exchequer598@gmail.com?subject=Unsubscribe - Daily Dilbert">write</a> to me!<small></em><br><br><small>The <a href="http://www.dilbert.com/">Dilbert</a> comic strip by <a href="http://www.dilbert.com/about/">Scott Adams</a> is copyrighted & trademarked material.</small>', 'html')
 	msgAlternative.attach(msgText)
 
 	# Assume the image is in the current directory
