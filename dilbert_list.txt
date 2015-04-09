@@ -1,0 +1,2 @@
+recipient1@website.com
+recipient2@website.com
